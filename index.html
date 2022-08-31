@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My FoodSta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- moddern-normalize start-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- normalize end -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header sectiion  -->
+
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="./index.html">
+          <svg class="" width="66" height="52">
+            <use href="./images/spryte/spryte.svg#logo"></use>
+          </svg>
+        </a>
+
+        <div class="header__menu">
+          <nav>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#Hero">Home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#Offerings">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#Favorites">Service</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#Customers">Menu</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#Subscribe">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button" type="button" data-modal-open>
+            Order Now
+          </button>
+        </div>
+
+        <button
+          class="mobile-btn__burger js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="mobile-btn__icon"
+            width="28"
+            height="28"
+            aria-label="Перемикач мобільного меню"
+            aria-controls="mobile-menu"
+          >
+            <use href="./images/spryte/spryte.svg#burger"></use>
+          </svg>
+        </button>
+
+        <!-- mobile-menu  -->
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button type="button" class="mobile-menu__btn js-close-menu">
+            <svg class="mobile-menu__icon" width="24" height="24">
+              <use href="./images/spryte/spryte.svg#cross"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link mobile-menu__link--border-top"
+                  href="#Hero"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#Offerings">About</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#Favorites">Service</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#Customers">Menu</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  class="mobile-menu__link mobile-menu__link--border-bottom"
+                  href="#Subscribe"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section  -->
+
+    <main>
+      <!-- hero section  -->
+
+      <!--Introdaction section-->
+      <section class="hero" id="Hero">
+        <div class="hero__container">
+          <div class="hero__text">
+            <h1 class="hero__title">
+              Enjoy Your Favorite Food From&nbsp;Anywhere
+            </h1>
+            <p class="hero__discr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <button class="hero__button button" type="button" data-modal-open>
+              Order Now
+            </button>
+          </div>
+
+          <div class="slider" data-slider="itc-slider" data-loop="true">
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="slider__item">
+                  <!-- Slide 1 -->
+                  <a
+                    class="slider__img-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="The better dishs"
+                  >
+                    <picture>
+                      <!-- Desktop screen -->
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-1@1x-lg.webp 1x,
+                          ./images/hero/dish-1@2x-lg.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-1@1x-lg.png 1x,
+                          ./images/hero/dish-1@2x-lg.png 2x
+                        "
+                        type="image/png"
+                      />
+
+                      <!-- Tab. screen -->
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-1@1x-md.webp 1x,
+                          ./images/hero/dish-1@2x-md.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-1@1x-md.png 1x,
+                          ./images/hero/dish-1@2x-md.png 2x
+                        "
+                        type="image/png"
+                      />
+                      <img
+                        src="./images/hero/dish-1@1x-md.png"
+                        alt="Foods photo"
+                        width="528"
+                        height="528"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="slider__item">
+                  <!-- Slide 2 -->
+                  <a
+                    class="slider__img-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="The better dishs"
+                  >
+                    <picture>
+                      <!-- Desktop screen -->
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-2@1x-lg.webp 1x,
+                          ./images/hero/dish-2@2x-lg.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-2@1x-lg.png 1x,
+                          ./images/hero/dish-2@2x-lg.png 2x
+                        "
+                        type="image/png"
+                      />
+
+                      <!-- Tab. screen -->
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-2@1x-md.webp 1x,
+                          ./images/hero/dish-2@2x-md.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-2@1x-md.png 1x,
+                          ./images/hero/dish-2@2x-md.png 2x
+                        "
+                        type="image/png"
+                      />
+                      <img
+                        src="./images/hero/dish-2@1x-md.png"
+                        alt="Foods photo"
+                        width="528"
+                        height="528"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="slider__item">
+                  <!-- Slide 3 -->
+                  <a
+                    class="slider__img-link"
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="The better dishs"
+                  >
+                    <picture>
+                      <!-- Desktop screen -->
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-3@1x-lg.webp 1x,
+                          ./images/hero/dish-3@2x-lg.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 1280px)"
+                        srcset="
+                          ./images/hero/dish-3@1x-lg.png 1x,
+                          ./images/hero/dish-3@2x-lg.png 2x
+                        "
+                        type="image/png"
+                      />
+
+                      <!-- Tab. screen -->
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-3@1x-md.webp 1x,
+                          ./images/hero/dish-3@2x-md.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/hero/dish-3@1x-md.png 1x,
+                          ./images/hero/dish-3@2x-md.png 2x
+                        "
+                        type="image/png"
+                      />
+                      <img
+                        src="./images/hero/dish-3@1x-md.png"
+                        alt="Foods photo"
+                        width="528"
+                        height="528"
+                      />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__bottom slider__bottom--left">
+              <button
+                class="slider__control"
+                data-slide="prev"
+                type="button"
+              ></button>
+              <svg class="slider__icon" width="40" height="48">
+                <use
+                  class="slider__vector slider__vector--def"
+                  href="./images/hero/symbol-defs.svg#left-typical"
+                ></use>
+                <use
+                  class="slider__vector slider__vector--hover"
+                  href="./images/hero/symbol-defs.svg#left-hover"
+                ></use>
+              </svg>
+            </div>
+
+            <div class="slider__bottom slider__bottom--right">
+              <button class="slider__control" data-slide="next"></button>
+              <svg class="slider__icon" width="40" height="48">
+                <use
+                  class="slider__vector slider__vector--def"
+                  href="./images/hero/symbol-defs.svg#right-typical"
+                ></use>
+                <use
+                  class="slider__vector slider__vector--hover"
+                  href="./images/hero/symbol-defs.svg#right-hover"
+                ></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Offerings section  -->
+
+      <section class="offerings" id="Offerings">
+        <div class="offerings__container">
+          <!-- <img
+      class="offerings__img-1"
+      src="./images/offerings/apple-mob@1x.png"
+      alt="apple"
+    />
+    <img
+      class="offerings__img-2"
+      src="./images/offerings/apple-2-tab@1x.png"
+      alt="apple"
+    />
+    <img
+      class="offerings__img-3"
+      src="./images/offerings/apple-3-tab@1x.png"
+      alt="apple"
+    /> -->
+          <div class="apples">
+            <div class="apple-1"></div>
+            <div class="apple-2"></div>
+            <div class="apple-3"></div>
+          </div>
+          <div>
+            <h2 class="offerings__title">What’s Special About Our Offerings</h2>
+            <p class="offerings__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat.
+            </p>
+            <ul class="offerings-list card-set">
+              <li class="offerings-list__item card-item">
+                <a class="offerings-list__link" href="">
+                  <svg class="offerings-list__icon" width="32" height="32">
+                    <use
+                      href="./images/offerings/icons.svg#icon-rocket-launch"
+                    ></use>
+                  </svg>
+                </a>
+                <h3 class="offerings-list__title">Fasest Delivery</h3>
+                <p class="offerings-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+              <li class="offerings-list__item card-item">
+                <a class="offerings-list__link" href="">
+                  <svg class="offerings-list__icon" width="32" height="32">
+                    <use
+                      href="./images/offerings/icons.svg#icon-touch-app"
+                    ></use>
+                  </svg>
+                </a>
+                <h3 class="offerings-list__title">Easy to order</h3>
+                <p class="offerings-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros.
+                </p>
+              </li>
+            </ul>
+            <button class="offerings__btn" type="button">Order Now</button>
+            <a
+              class="offerings__link"
+              href=""
+              target="_blank"
+              rel="noreferrer noopener"
+              >Read More ></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- favorites sectioin  -->
+
+      <!-- <!DOCTYPE html> -->
+      <section class="favorites" id="Favorites">
+        <h2 class="favorites__title">Some of Our Favorites</h2>
+        <p class="favorites__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <ul class="favorites__list card-set">
+          <li class="favorites__item card-item">
+            <a class="favorites__link" href="">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-1_desk_@1x.webp 1x,
+                    ./images/favorites/img-1_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-1_desk_@1x.png 1x,
+                    ./images/favorites/img-1_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-1_tab_@1x.webp 1x,
+                    ./images/favorites/img-1_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-1_tab_@1x.png 1x,
+                    ./images/favorites/img-1_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-1_mob_@1x.webp 1x,
+                    ./images/favorites/img-1_mob_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-1_mob_@1x.png 1x,
+                    ./images/favorites/img-1_mob_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-1_mob_@1x.png"
+                  alt="Фото бургера"
+                  width="315"
+                  height="315"
+                />
+              </picture>
+            </a>
+          </li>
+          <li class="favorites__item card-item">
+            <a class="favorites__link" href="">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-2_desk_@1x.webp 1x,
+                    ./images/favorites/img-2_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-2_desk_@1x.png 1x,
+                    ./images/favorites/img-2_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-2_tab_@1x.webp 1x,
+                    ./images/favorites/img-2_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-2_tab_@1x.png 1x,
+                    ./images/favorites/img-2_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-2_mob_@1x.webp 1x,
+                    ./images/favorites/img-2_mob_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-2_mob_@1x.png 1x,
+                    ./images/favorites/img-2_mob_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-2_mob_@1x.png"
+                  alt="Фото тарілки з пастою"
+                  width="315"
+                  height="315"
+                /> </picture
+            ></a>
+          </li>
+          <li class="favorites__item card-item">
+            <a href="" class="favorites__link">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-3_desk_@1x.webp 1x,
+                    ./images/favorites/img-3_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-3_desk_@1x.png 1x,
+                    ./images/favorites/img-3_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-3_tab_@1x.webp 1x,
+                    ./images/favorites/img-3_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-3_tab_@1x.png 1x,
+                    ./images/favorites/img-3_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-3_mob_@1x.webp 1x,
+                    ./images/favorites/img-3_mob_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:480px )"
+                  srcset="
+                    ./images/favorites/img-3_mob_@1x.png 1x,
+                    ./images/favorites/img-3_mob_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-3_mob_@1x.png"
+                  alt="Фото піцци"
+                  width="315"
+                  height="315"
+                /> </picture
+            ></a>
+          </li>
+          <li class="favorites__item card-item">
+            <a href="" class="favorites__link">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-4_desk_@1x.webp 1x,
+                    ./images/favorites/img-4_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-4_desk_@1x.png 1x,
+                    ./images/favorites/img-4_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-4_tab_@1x.webp 1x,
+                    ./images/favorites/img-4_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-4_tab_@1x.png 1x,
+                    ./images/favorites/img-4_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <!-- <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-4_mob_@1x.webp 1x,
+            ./images/favorites/img-4_mob_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-4_mob_@1x.png 1x,
+            ./images/favorites/img-4_mob_@2x.png 2x
+          "
+          type="image/png"
+        /> -->
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-4_tab_@1x.png"
+                  alt="Фото курки з рисом"
+                  width="315"
+                  height="315"
+                /> </picture
+            ></a>
+          </li>
+          <li class="favorites__item card-item">
+            <a href="" class="favorites__link">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-5_desk_@1x.webp 1x,
+                    ./images/favorites/img-5_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-5_desk_@1x.png 1x,
+                    ./images/favorites/img-5_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-5_tab_@1x.webp 1x,
+                    ./images/favorites/img-5_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-5_tab_@1x.png 1x,
+                    ./images/favorites/img-5_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <!-- <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-5_mob_@1x.webp 1x,
+            ./images/favorites/img-5_mob_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-5_mob_@1x.png 1x,
+            ./images/favorites/img-5_mob_@2x.png 2x
+          "
+          type="image/png"
+        /> -->
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-5_tab_@1x.png"
+                  alt="Фото салату"
+                  width="315"
+                  height="315"
+                /> </picture
+            ></a>
+          </li>
+          <li class="favorites__item card-item">
+            <a href="" class="favorites__link">
+              <picture class="favorites__pic">
+                <!-- descktop -->
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-6_desk_@1x.webp 1x,
+                    ./images/favorites/img-6_desk_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1280px )"
+                  srcset="
+                    ./images/favorites/img-6_desk_@1x.png 1x,
+                    ./images/favorites/img-6_desk_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- tablet -->
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-6_tab_@1x.webp 1x,
+                    ./images/favorites/img-6_tab_@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="
+                    ./images/favorites/img-6_tab_@1x.png 1x,
+                    ./images/favorites/img-6_tab_@2x.png 2x
+                  "
+                  type="image/png"
+                />
+                <!-- mobile -->
+                <!-- <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-6_mob_@1x.webp 1x,
+            ./images/favorites/img-6_mob_@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width:480px )"
+          srcset="
+            ./images/favorites/img-6_mob_@1x.png 1x,
+            ./images/favorites/img-6_mob_@2x.png 2x
+          "
+          type="image/png"
+        /> -->
+                <img
+                  class="favorites__img"
+                  src="./images/favorites/img-6_tab_@1x.png"
+                  alt="Фото борщу"
+                  width="315"
+                  height="315"
+                /> </picture
+            ></a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- customers section  -->
+
+      <section class="customers customers__overlay" id="Customers">
+        <div class="customers-container">
+          <h2 class="customers-container__title">What our Customers Say</h2>
+          <p class="customers-container__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="list customers-container__list">
+            <li class="customers-container__item">
+              <img
+                class="customers-container__stars"
+                src="./images/customers-say/stars.svg"
+                alt="stars"
+              />
+              <p class="customers-container__txt">
+                “The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked”
+              </p>
+              <div class="customers-container__card">
+                <img
+                  class="customers-container__card--img"
+                  src="./images/customers-say/customer-1.png"
+                  alt="Customers"
+                />
+                <div class="customers-container__card--name">
+                  <h3>Sumith Shah</h3>
+                  <p>Some dude</p>
+                </div>
+              </div>
+            </li>
+            <li class="customers-container__item">
+              <img
+                class="customers-container__stars"
+                src="./images/customers-say/stars.svg"
+                alt="stars"
+              />
+              <p class="customers-container__txt">
+                “The ease with which I can just go in and order what i want was
+                amazing, It has been a very pleasant experience ordering from
+                this app”
+              </p>
+              <div class="customers-container__card">
+                <img
+                  class="customers-container__card--img"
+                  src="./images/customers-say/customer-2.png"
+                  alt="Customers"
+                />
+                <div class="customers-container__card--name">
+                  <h3>Sumith Shah</h3>
+                  <p>Some dude</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- subscribe section  -->
+
+      <section class="subscribe" id="Subscribe">
+        <div class="subscribe__container">
+          <picture class="subscribe__image">
+            <!-- Desktop screen -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/subscribe/bananas@1x-lg.webp 1x,
+                ./images/subscribe/bananas@1x-lg.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/subscribe/bananas@1x-lg.png 1x,
+                ./images/subscribe/bananas@1x-lg.png 2x
+              "
+              type=" image/png"
+            />
+
+            <!-- Tab. screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/subscribe/bananas@1x-md.webp 1x,
+                ./images/subscribe/bananas@1x-md.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/subscribe/bananas@1x-md.png 1x,
+                ./images/subscribe/bananas@1x-md.png 2x
+              "
+              type=" image/png"
+            />
+
+            <!-- Mob. screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/subscribe/bananas@1x-sm.webp 1x,
+                ./images/subscribe/bananas@1x-sm.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/subscribe/bananas@1x-sm.png 1x,
+                ./images/subscribe/bananas@1x-sm.png 2x
+              "
+              type=" image/png"
+            />
+
+            <img
+              src="./images/subscribe/bananas@1x-sm.png"
+              alt="Banan`s photo"
+              width="546"
+              height="266"
+            />
+          </picture>
+
+          <div class="subscribe__block">
+            <h2 class="subscribe__title">
+              Subscribe To Get Special&nbsp;Offers
+            </h2>
+
+            <p class="subscribe__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+
+            <form class="subscribe__form" autocomplete="off" novalidate>
+              <label class="form__label subscribe__label" for="user_email">
+                <input
+                  class="form__input subscribe__input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </label>
+              <button class="button subscribe__button" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+
+    <footer class="footer section">
+      <!-------------------- BLOCK 1 ------------------------------>
+      <div class="footer__container">
+        <div class="footer__nav-form nav-form">
+          <a
+            class="nav-form__logo link"
+            href=""
+            target="_blank"
+            rel="noopener nonereferre"
+            aria-label="logo"
+          >
+            <img
+              src="/assets/footer.logo.jpg"
+              alt="logo"
+              width="69"
+              height="51"
+            />
+          </a>
+
+          <!------------- navigation --------------------------->
+
+          <nav class="footer__nav nav">
+            <ul class="nav__list list">
+              <li class="nav__item item-nav">
+                <a
+                  class="nav__link link-nav link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="Home"
+                ></a
+                >Home
+              </li>
+              <li class="nav__item item-nav">
+                <a
+                  class="nav__link link-nav link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="about"
+                ></a
+                >About
+              </li>
+              <li class="nav__item item-nav">
+                <a
+                  class="nav__link link-nav link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="service"
+                ></a
+                >Service
+              </li>
+              <li class="nav__item item-nav">
+                <a
+                  class="nav__link link-nav link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="menu"
+                ></a
+                >Menu
+              </li>
+              <li class="nav__item item-nav">
+                <a
+                  class="nav__link link-nav link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="contact"
+                ></a
+                >Contact
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!------------------ BLOCK 2 ------------------------>
+
+        <!------------ forma -------------------->
+        <div>
+          <div class="footer__form form">
+            <h3 class="form__uppertitle uppertitle--form uppertitle">
+              Subscribe
+            </h3>
+            <form class="form" autocomplete="off" novalidate>
+              <label class="form__label" for="user_email">
+                <input
+                  class="form__input input--email input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </label>
+              <button class="form__button button" type="submit">
+                Subscribe
+              </button>
+              <span class="form__text text-span"
+                >By subscribing you agree to with our
+                <a
+                  class="form__link link-form link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="privacy policy"
+                  >Privacy Policy
+                </a>
+              </span>
+            </form>
+          </div>
+
+          <!----  information-copyright  ----->
+
+          <div class="footer__information-copyright information-copyright">
+            <ul class="information-copyright__list">
+              <li>
+                <a
+                  class="information-copyright__link link--information link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="privacy policy"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="information-copyright__link link--information link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="terms of service"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a
+                  class="information-copyright__link link--information link reset-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener nonereferre"
+                  aria-label="cookies settings"
+                  >Cookies Settings
+                </a>
+              </li>
+            </ul>
+            <p class="information-copyright__text text-copyright">
+              2022 FoodSta. All right reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- modal window -->
+
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn" type="button" data-modal-close>
+          <svg width="24" height="24">
+            <use href="./images/spryte/spryte.svg#cross"></use>
+          </svg>
+        </button>
+
+        <form class="modal-form" id="form" autocomplete="on" novalidate>
+          <strong class="modal-form__title">Order Form</strong>
+          <div class="modal-form__group" role="group">
+            <label class="modal-form__field">
+              <span class="modal-form__label">Name</span>
+              <input
+                class="modal-form__input"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required
+                minlength="3"
+                maxlength="25"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              />
+            </label>
+            <label class="modal-form__field">
+              <span class="modal-form__label">Phone number</span>
+              <input
+                class="modal-form__input"
+                type="tel"
+                name="tel"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+            </label>
+            <label class="modal-form__field">
+              <span class="modal-form__label">E-mail</span>
+              <input
+                class="modal-form__input"
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+            </label>
+          </div>
+          <button class="modal-form__btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- scripts  -->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
